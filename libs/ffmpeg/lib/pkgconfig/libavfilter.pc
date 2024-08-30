@@ -1,0 +1,14 @@
+prefix=/Users/congnguyen/Documents/MyWork/StreamLibs/ffmpeg/build
+exec_prefix=${prefix}
+libdir=/Users/congnguyen/Documents/MyWork/StreamLibs/ffmpeg/build/lib
+includedir=/Users/congnguyen/Documents/MyWork/StreamLibs/ffmpeg/build/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 10.2.102
+Requires: libswscale >= 8.2.100, libavformat >= 61.5.101, libavcodec >= 61.11.100, libswresample >= 5.2.100, libavutil >= 59.35.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavfilter -framework OpenGL -framework OpenGL -pthread -lm -framework VideoToolbox -framework CoreImage -framework AppKit -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Libs.private: 
+Cflags: -I${includedir}

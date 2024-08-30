@@ -1,0 +1,14 @@
+prefix=/Users/congnguyen/Documents/MyWork/StreamLibs/ffmpeg/build
+exec_prefix=${prefix}
+libdir=/Users/congnguyen/Documents/MyWork/StreamLibs/ffmpeg/build/lib
+includedir=/Users/congnguyen/Documents/MyWork/StreamLibs/ffmpeg/build/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 8.2.100
+Requires: libavutil >= 59.35.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswscale -lm
+Libs.private: 
+Cflags: -I${includedir}

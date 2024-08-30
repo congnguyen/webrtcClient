@@ -1,0 +1,14 @@
+prefix=/Users/congnguyen/Documents/MyWork/StreamLibs/ffmpeg/build
+exec_prefix=${prefix}
+libdir=/Users/congnguyen/Documents/MyWork/StreamLibs/ffmpeg/build/lib
+includedir=/Users/congnguyen/Documents/MyWork/StreamLibs/ffmpeg/build/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 61.5.101
+Requires: libavcodec >= 61.11.100, libswresample >= 5.2.100, libavutil >= 59.35.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lm -lbz2 -lz -framework CoreFoundation -framework Security
+Libs.private: 
+Cflags: -I${includedir}
